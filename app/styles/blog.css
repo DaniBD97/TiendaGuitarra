@@ -1,0 +1,80 @@
+.blog{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media(min-width: 768px){
+    .blog{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+}
+
+@media(min-width: 1024px){
+    .blog{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+.post{
+    max-width: 80rem;
+}
+
+
+
+.fecha{
+    margin: 5px 0 5px 0;
+}
+
+.post .contenido{
+    padding: 1.5rem;
+}
+
+.post .contenido h3{
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin: 0;
+    height: 80px;
+    
+}
+
+.post .resumen{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.enlace{
+
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    
+}
+
+.enlace:hover{
+    background-color: var(--primary);
+}
+
+.post .fecha {
+
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.resumen-url{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
